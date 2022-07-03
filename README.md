@@ -12,7 +12,7 @@ Our task is to perform an initial data and exploratory analysis of some of their
 - Products
 - Customers 
 - Orders_products_prior
-(https://s3.amazonaws.com/coach-courses-us/public/courses/data-immersion/A4/A4_Data_Assets/customers.zip)
+- link (https://s3.amazonaws.com/coach-courses-us/public/courses/data-immersion/A4/A4_Data_Assets/customers.zip)
 
 ## Citation: “The Instacart Online Grocery Shopping Dataset2017”, Accessed from (https://www.instacart.com/datasets/grocery-shopping-2017) on<16/05/2022>.
 
