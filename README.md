@@ -17,13 +17,32 @@ Our task is to perform an initial data and exploratory analysis of some of their
 ## Citation: “The Instacart Online Grocery Shopping Dataset2017”, Accessed from (https://www.instacart.com/datasets/grocery-shopping-2017) on<16/05/2022>.
 
 
-### Libraries used:
+## Libraries used:
 - Pandas
 - Numpy
 - os
 - matplotlib
 - Seaborn
 - scipy
+
+## Some script cells:
+### Creating an 'age_group' column.
+df_retained.loc[(df_retained['age'] >= 18) & (df_retained['age'] <= 25), 'age_group'] = '18 - 25'
+df_retained.loc[(df_retained['age'] >= 26) & (df_retained['age'] <= 35), 'age_group'] = '26 - 35'
+df_retained.loc[(df_retained['age'] >= 36) & (df_retained['age'] <= 45), 'age_group'] = '36 - 45'
+df_retained.loc[(df_retained['age'] >= 46) & (df_retained['age'] <= 55), 'age_group'] = '46 - 55'
+df_retained.loc[(df_retained['age'] >= 56) & (df_retained['age'] <= 65), 'age_group'] = '56 - 65'
+df_retained.loc[(df_retained['age'] >= 66) & (df_retained['age'] <= 75), 'age_group'] = '66 - 75'
+df_retained.loc[(df_retained['age'] >= 77) & (df_retained['age'] <= 85), 'age_group'] = '76 - 85'
+
+### Crosstabs:
+fam_dep= pd.crosstab(df_retained['marital_status'], df_retained['goods_category'], dropna = False)
+loy_reg = pd.crosstab(df_retained['region'], df_retained['loyalty_flag'], dropna = False)
+
+### creating a "family_status" column
+df_retained.loc[(df_retained['dependants'] == 0), 'family_status'] = 'single'
+df_retained.loc[(df_retained['dependants'] >= 1), 'family_status'] = 'family'
+
 
 
 ## Note: Instacart is a real company that’s made their data available online. However, the contents of this project brief have been fabricated for the purpose of this student project.
