@@ -1,4 +1,5 @@
-# Analyst-python: Instacart Grocery Basket Analysis 
+# Analyst-python: ![image](https://user-images.githubusercontent.com/108523069/177024265-bcb6b603-08fe-492d-8084-b55fb84fce82.png)
+Instacart Grocery Basket Analysis 
 
 ## INTRODUCTION 
 Instacart, an online grocery store that operates through an app. Instacart already has very good sales, but they want to uncover more information about their sales patterns.The Instacart stakeholders are most interested in the variety of customers in their database along with their purchasing behaviors. They assume they can't target everyone using the same methods,and they’re considering a targeted marketing strategy. They want to target different customers with applicable marketing campaigns to see whether they have an effect on the sale of their products.
